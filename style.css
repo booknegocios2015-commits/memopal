@@ -326,7 +326,7 @@ section {
     position: relative;
     padding-top: 180px;
     padding-bottom: 120px;
-    background-image: url('assets/hero_banner.png');
+    background-image: url('image/hero_banner.png');
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
