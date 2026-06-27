@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEMOPAL · Paltas, Frutas y Verduras en Cauquenes y Linares</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="MEMOPAL: Distribuidor mayorista de paltas Hass, frutas y verduras frescas en Cauquenes, Linares y la Región del Maule. Precios directos del productor y despacho rápido para comerciantes.">
+    <meta name="keywords" content="memopal, mayorista paltas cauquenes, distribuidor verduras linares, paltas maule, palta hass chile, verduras al por mayor maule">
+    <meta name="author" content="MEMOPAL">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://memopal.cl/">
+    <meta property="og:title" content="MEMOPAL · Paltas, Frutas y Verduras en Cauquenes y Linares">
+    <meta property="og:description" content="Paltas Hass y hortalizas seleccionadas directas del productor. Abastecimiento rápido y calidad garantizada en la Región del Maule.">
+    <meta property="og:image" content="assets/hero_banner.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==================== HEADER / NAVBAR ==================== -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <a href="#hero" class="navbar-brand">
+                <span class="brand-icon">🥑</span>
+                <div class="brand-text">
+                    <span class="brand-name">MEMOPAL</span>
+                    <span class="brand-sub">Cauquenes • Linares • Región del Maule</span>
+                </div>
+            </a>
+            
+            <nav class="nav-links" id="nav-links">
+                <a href="#catalog" class="nav-link">Catálogo</a>
+                <a href="#benefits" class="nav-link">Nosotros</a>
+                <a href="#testimonials" class="nav-link">Clientes</a>
+                <a href="#faqs" class="nav-link">Preguntas</a>
+                <a href="#contact" class="nav-link">Contacto</a>
+                <a href="#" class="btn btn-secondary nav-cta-btn" id="nav-whatsapp-btn">
+                    <span>Cotizar</span>
+                    <i data-lucide="message-square" class="btn-icon-right"></i>
+                </a>
+            </nav>
+            
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Abrir menú">
+                <i data-lucide="menu" id="menu-icon"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>Despacho Mayorista en Cauquenes y Linares</span>
+                </div>
+                <h1 class="hero-title">
+                    Paltas, Frutas y Verduras <br>
+                    <span class="text-highlight">Directo del Productor</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Abastecemos a almacenes, restaurantes, verdulerías y distribuidores en Cauquenes y Linares con la mejor selección, precios competitivos y entrega directa.
+                </p>
+                <div class="hero-actions">
+                    <a href="#" class="btn btn-primary" id="hero-cta-btn">
+                        <i data-lucide="shopping-cart" class="btn-icon"></i>
+                        <span>Ver Catálogo Hoy</span>
+                    </a>
+                    <a href="#contact" class="btn btn-outline-white">
+                        <span>Horarios y Ubicación</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CATALOG SECTION ==================== -->
+    <section class="catalog-section" id="catalog">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Nuestros Productos</span>
+                <h2 class="section-title">Catálogo Mayorista</h2>
+                <p class="section-description">
+                    Precios de referencia y disponibilidad actualizados. Todo nuestro stock se confirma y coordina de manera directa por WhatsApp.
+                </p>
+            </div>
+            
+            <!-- Category Filters -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-category="todos">Todos</button>
+                <button class="filter-btn" data-category="paltas">Paltas</button>
+                <button class="filter-btn" data-category="verduras">Verduras</button>
+                <button class="filter-btn" data-category="frutas">Frutas</button>
+            </div>
+            
+            <!-- Grid Catalog -->
+            <div class="catalog-grid" id="catalog-grid">
+                <!-- Dynamically rendered by JS -->
+                <div class="skeleton-card"></div>
+                <div class="skeleton-card"></div>
+                <div class="skeleton-card"></div>
+            </div>
+
+            <div class="catalog-notice">
+                <i data-lucide="info" class="notice-icon"></i>
+                <p><strong>Nota de Precios:</strong> Los valores indicados son referenciales y fluctúan según mercado y volumen de compra. El precio final y stock disponible se confirman de forma inmediata al cotizar por WhatsApp.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== BENEFITS SECTION ==================== -->
+    <section class="benefits-section" id="benefits">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">¿Por qué elegirnos?</span>
+                <h2 class="section-title">Calidad y Servicio Garantizado</h2>
+                <p class="section-description">
+                    Nos enfocamos en ser el socio estratégico ideal para tu negocio de distribución y retail agrícola.
+                </p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon-wrapper">
+                        <i data-lucide="shield-check" class="benefit-icon"></i>
+                    </div>
+                    <h3 class="benefit-title">Calidad Seleccionada</h3>
+                    <p class="benefit-text">
+                        Revisamos cada caja y saco. Garantizamos paltas en el punto óptimo de maduración y hortalizas cosechadas recientemente.
+                    </p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon-wrapper">
+                        <i data-lucide="truck" class="benefit-icon"></i>
+                    </div>
+                    <h3 class="benefit-title">Despacho Cauquenes y Linares</h3>
+                    <p class="benefit-text">
+                        Despachamos directamente en tu local comercial o punto de venta en Cauquenes, Linares y alrededores con transportes adecuados.
+                    </p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon-wrapper">
+                        <i data-lucide="trending-down" class="benefit-icon"></i>
+                    </div>
+                    <h3 class="benefit-title">Precios Mayoristas</h3>
+                    <p class="benefit-text">
+                        Al evitar intermediarios innecesarios logramos ofrecer márgenes competitivos que benefician la rentabilidad de tu negocio.
+                    </p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon-wrapper">
+                        <i data-lucide="users" class="benefit-icon"></i>
+                    </div>
+                    <h3 class="benefit-title">Atención Personalizada</h3>
+                    <p class="benefit-text">
+                        Trato directo por WhatsApp con respuestas rápidas y adaptabilidad a requerimientos especiales y pedidos programados.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS SECTION ==================== -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Opiniones Reales</span>
+                <h2 class="section-title">Confianza de Comerciantes Locales</h2>
+                <p class="section-description">
+                    Abastecemos a decenas de almacenes, restaurantes y verdulerías en la Región del Maule. Esto es lo que dicen de nosotros:
+                </p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "La calidad de la palta Hass es constante semana a semana, algo muy difícil de encontrar. El despacho directo a nuestro almacén en Cauquenes es puntual y nos ahorra mucho tiempo."
+                    </p>
+                    <div class="testimonial-author">
+                        <span class="author-avatar">🏪</span>
+                        <div class="author-info">
+                            <h4>Javier Mendoza</h4>
+                            <p>Dueño de Verdulería El Canasto (Cauquenes)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Para nuestro restaurante, el punto de maduración de la palta es crítico. Ellos siempre entienden lo que necesitamos y nos entregan el producto listo para consumo de la semana."
+                    </p>
+                    <div class="testimonial-author">
+                        <span class="author-avatar">🍽️</span>
+                        <div class="author-info">
+                            <h4>María Paz Silva</h4>
+                            <p>Administradora de Restobar Oasis (Pelluhue)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Los precios directos del productor nos permiten mantener un buen margen en nuestra feria. El proceso de cotización por WhatsApp es súper ágil y rápido."
+                    </p>
+                    <div class="testimonial-author">
+                        <span class="author-avatar">🥬</span>
+                        <div class="author-info">
+                            <h4>Carlos Fuentes</h4>
+                            <p>Comerciante Mayorista Feria Libre (Linares)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FAQS SECTION ==================== -->
+    <section class="faqs-section" id="faqs">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Preguntas Frecuentes</span>
+                <h2 class="section-title">Resolvemos tus Dudas</h2>
+                <p class="section-description">
+                    Toda la información que necesitas para iniciar tu compra y distribución con nosotros.
+                </p>
+            </div>
+            
+            <div class="faqs-wrapper">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Cuál es el pedido mínimo para despacho?</span>
+                        <i data-lucide="chevron-down" class="faq-arrow"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Para la zona urbana de Cauquenes y Linares, el pedido mínimo de despacho gratuito es de 1 caja o saco (según el producto). Para otras comunas de la Región del Maule, coordinamos rutas especiales o pedidos combinados con un mínimo razonable.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Cómo y cuándo se realizan los pagos?</span>
+                        <i data-lucide="chevron-down" class="faq-arrow"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Aceptamos transferencia bancaria electrónica y pago en efectivo al momento de recibir el producto (contra entrega). De esta manera, aseguras la conformidad con la calidad entregada antes de pagar.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Qué días realizan despachos a otras comunas del Maule?</span>
+                        <i data-lucide="chevron-down" class="faq-arrow"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Nuestras rutas de reparto habituales son:
+                        <br>• <strong>Cauquenes (Urbano):</strong> Lunes a Sábado.
+                        <br>• <strong>Linares (Urbano):</strong> Lunes a Sábado.
+                        <br>• <strong>Chanco y Pelluhue / Curanipe:</strong> Martes y Jueves.
+                        <br>• <strong>Parral, Talca y alrededores:</strong> Miércoles y Viernes.
+                        <br>Consultar por despachos especiales o urgentes vía WhatsApp.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Entregan boleta o factura de venta?</span>
+                        <i data-lucide="chevron-down" class="faq-arrow"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, emitimos Factura Electrónica (para comerciantes que necesiten recuperar IVA) o Boleta de Ventas según lo requiera el cliente. Todos nuestros precios de referencia publicados en la web son valores netos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT & LOCATION SECTION ==================== -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Left: Contact Details -->
+                <div class="contact-info">
+                    <span class="section-tag">Contacto Directo</span>
+                    <h2 class="section-title">Estamos en Cauquenes y Linares</h2>
+                    <p class="contact-subtitle">
+                        Visítanos en nuestra bodega de distribución o contáctanos de inmediato para agendar un despacho o cotizar pedidos grandes.
+                    </p>
+                    
+                    <div class="contact-details-list">
+                        <div class="contact-detail-item">
+                            <div class="detail-icon-wrapper">
+                                <i data-lucide="map-pin" class="detail-icon"></i>
+                            </div>
+                            <div class="detail-content">
+                                <h4>Bodega de Distribución</h4>
+                                <p>Av. Doctor Balmaceda (Sector Entrada Norte), Cauquenes, Región del Maule, Chile</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail-item">
+                            <div class="detail-icon-wrapper">
+                                <i data-lucide="clock" class="detail-icon"></i>
+                            </div>
+                            <div class="detail-content">
+                                <h4>Horario de Atención</h4>
+                                <p>Lunes a Sábado: 08:00 AM - 18:00 PM<br>Domingos: Cerrado</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail-item">
+                            <div class="detail-icon-wrapper">
+                                <i data-lucide="phone-call" class="detail-icon"></i>
+                            </div>
+                            <div class="detail-content">
+                                <h4>Teléfono Mayorista</h4>
+                                <p><a href="tel:+56942494302" class="detail-link">+56 9 4249 4302</a> (Consultas Telefónicas)</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-actions">
+                        <a href="#" class="btn btn-primary" id="contact-whatsapp-btn">
+                            <!-- WhatsApp icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                            <span>Escríbenos por WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Right: Map -->
+                <div class="contact-map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12711.666497184282!2d-72.31688647035541!3d-35.96792376887563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9668d273a8789311%3A0xe21a8c9fb2f2e7ad!2sCauquenes%2C%20Regi%C3%B3n%20del%20Maule!5e0!3m2!1ses-419!2scl!4v1710000000000!5m2!1ses-419!2scl" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Ubicación de MEMOPAL en Cauquenes">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <span class="footer-logo">🥑</span>
+                <h3>MEMOPAL</h3>
+                <p>Distribuidor mayorista líder de productos agrícolas en las provincias de Cauquenes, Linares y Maule Sur.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navegación</h4>
+                <a href="#hero">Inicio</a>
+                <a href="#catalog">Productos</a>
+                <a href="#benefits">Nosotros</a>
+                <a href="#testimonials">Clientes</a>
+                <a href="#faqs">Preguntas</a>
+                <a href="#contact">Contacto</a>
+            </div>
+            <div class="footer-legal">
+                <h4>Información</h4>
+                <p>Todos los precios mostrados están sujetos a disponibilidad de stock y volumen de pedido. Despacho exclusivo para comercios registrados y clientes mayoristas.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <p>&copy; 2026 MEMOPAL. Todos los derechos reservados.</p>
+                <p class="credits">Diseñado para la Región del Maule, Chile.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== FLOATING WHATSAPP BUTTON ==================== -->
+    <a href="#" class="whatsapp-floating" id="floating-whatsapp-btn" aria-label="Contacto por WhatsApp" target="_blank" rel="noopener noreferrer">
+        <div class="whatsapp-badge-pulse"></div>
+        <div class="whatsapp-avatar-wrapper">
+            <span class="whatsapp-status-dot"></span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="whatsapp-float-icon"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        </div>
+        <span class="whatsapp-floating-tooltip">¿Consultas? Escríbenos en línea</span>
+    </a>
+
+    <!-- ==================== PRODUCT INQUIRY MODAL ==================== -->
+    <div class="modal-backdrop" id="inquiry-modal">
+        <div class="modal-card">
+            <button class="modal-close-btn" id="modal-close-btn" aria-label="Cerrar modal">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="modal-grid">
+                <div class="modal-image-container">
+                    <img src="assets/palta_hass.png" alt="Producto a cotizar" id="modal-product-image" class="modal-product-img">
+                </div>
+                <div class="modal-content">
+                    <span class="modal-category-tag" id="modal-product-category">Paltas</span>
+                    <h3 class="modal-title" id="modal-product-name">Palta Hass Mayorista</h3>
+                    <p class="modal-desc" id="modal-product-desc">Descripción del producto</p>
+                    
+                    <div class="modal-price-box">
+                        <span class="modal-price-label">Precio Referencial</span>
+                        <div class="modal-price-row">
+                            <span class="modal-price-value" id="modal-product-price">$12.500 / Kilo</span>
+                            <span class="modal-price-unit" id="modal-product-unit">Venta mínima: 1 Caja (10 kg)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-form-row">
+                        <!-- Quantity Selector -->
+                        <div class="form-group flex-1">
+                            <label for="modal-qty">Cantidad Estimada</label>
+                            <div class="quantity-picker">
+                                <button type="button" class="qty-btn" id="qty-minus">-</button>
+                                <input type="number" id="modal-qty" value="1" min="1" step="1">
+                                <button type="button" class="qty-btn" id="qty-plus">+</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Location Dropdown -->
+                        <div class="form-group flex-2">
+                            <label for="modal-location">Comuna de Despacho</label>
+                            <select id="modal-location">
+                                <option value="Cauquenes (Urbano)">Cauquenes (Urbano)</option>
+                                <option value="Linares (Urbano)">Linares (Urbano)</option>
+                                <option value="Cauquenes (Rural)">Cauquenes (Rural / Alrededores)</option>
+                                <option value="Linares (Rural)">Linares (Rural / Alrededores)</option>
+                                <option value="Pelluhue / Curanipe">Pelluhue / Curanipe</option>
+                                <option value="Chanco">Chanco</option>
+                                <option value="Parral">Parral</option>
+                                <option value="Talca">Talca</option>
+                                <option value="Otra comuna (Región del Maule)">Otra comuna (Región del Maule)</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary w-full" id="modal-submit-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                        <span>Enviar Pedido a WhatsApp</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Core Application Logic -->
+    <script src="main.js"></script>
+</body>
+</html>
