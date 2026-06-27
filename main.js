@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "paltas",
             referencePrice: "$12.500 / Kilo",
             unit: "Venta mínima: 1 Caja (10 kg aprox.)",
-            image: "assets/palta_hass.png",
+            image: "image/palta_hass.png",
             description: "Palta Hass seleccionada de calidad premium. Piel texturada y pulpa cremosa de excelente calidad, ideal para maduración controlada y venta en local."
         },
         {
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "paltas",
             referencePrice: "$13.200 / Kilo",
             unit: "Venta mínima: 1 Malla (5 kg aprox.)",
-            image: "assets/palta_hass.png",
+            image: "image/palta_hass.png",
             description: "Paltas Hass listas para comercialización inmediata, empacadas en mallas de alta resistencia. Calidad y calibre uniforme."
         },
         {
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "frutas",
             referencePrice: "$850 / Kilo",
             unit: "Venta mínima: 1 Malla (10 kg aprox.)",
-            image: "assets/limon_sutil.png",
+            image: "image/limon_sutil.png",
             description: "Limones sutiles frescos y jugosos, de color verde intenso. Cosechados recientemente, ideales para pescaderías, restaurantes y verdulerías."
         },
         {
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "verduras",
             referencePrice: "$900 / Kilo",
             unit: "Venta mínima: 1 Cajón (15 kg aprox.)",
-            image: "assets/tomate_larga_vida.png",
+            image: "image/tomate_larga_vida.png",
             description: "Tomates rojos y firmes, con excelente poscosecha. Perfectos para almacenamiento y distribución minorista en Cauquenes y Linares."
         },
         {
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "verduras",
             referencePrice: "$750 / Kilo",
             unit: "Venta mínima: 1 Saco (15 kg aprox.)",
-            image: "assets/cebolla_guarda.png",
+            image: "image/cebolla_guarda.png",
             description: "Cebollas secas y firmes con piel dorada uniforme. Larga duración ideales para abastecimiento de temporada."
         },
         {
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "verduras",
             referencePrice: "$680 / Kilo",
             unit: "Venta mínima: 1 Saco (20 kg aprox.)",
-            image: "assets/papa_patagonia.png",
+            image: "image/papa_patagonia.png",
             description: "Papas seleccionadas y limpias, listas para la venta. Excelente cocción, muy demandadas por clientes de comida rápida y hogares."
         }
     ];
